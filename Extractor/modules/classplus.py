@@ -62,7 +62,7 @@ async def get_course_content(session, course_id, folder_id=0):
 
     return fetched_contents
 
-async def classplus_txt(message, session, user_id):
+async def classplus_txt(app, message, session, user_id=None):
     headers = {
         'accept-encoding': 'gzip',
         'accept-language': 'EN',
