@@ -2,7 +2,8 @@ import requests
 import os
 import json
 import asyncio
-from pyrogram import Client, filters, idle
+from pyromod import Client
+from pyrogram import filters, idle
 from Extractor import app
 from config import SUDO_USERS
 
