@@ -11,16 +11,19 @@ pycryptodome
 pytz
 certifi==2023.11.17
 charset-normalizer==3.3.2
-# --- replacements ---
-sqlite-web==0.6.6               # replaces databricks-sql-connector
+databricks-sql-connector==3.0.1
 et-xmlfile==1.1.0
 idna==3.6
-zstandard==0.23.0               # replaces lz4
-numpy==2.2.5                    # use system-installed version (T)
+# numpy==1.26.3                # ❌ replaced with:
+numexpr==2.10.0
+# pandas==2.2.0                # ❌ replaced with:
+modin
+# pyarrow==14.0.2              # ❌ replaced with:
+fastparquet
+# lz4==4.3.3                   # ❌ replaced with:
+zstandard
 oauthlib==3.2.2
 openpyxl==3.1.2
-pandas-lite==0.1.12             # replaces heavy pandas
-fastparquet==2024.5.0           # replaces pyarrow
 python-dateutil==2.8.2
 python-dotenv==1.0.0
 pytz==2023.3.post1
@@ -31,7 +34,7 @@ thrift==0.16.0
 typing_extensions==4.9.0
 tzdata==2023.4
 urllib3==2.1.0
-beautifulsoup4==4.12.3          # replaces bs4 (same lib, real name)
+bs4
 flask
 pyromod
-pandas-compat==1.1.0            # placeholder ensures backward pandas API compat
+tabulate
